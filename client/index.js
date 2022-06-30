@@ -25,7 +25,8 @@
       // });
       const accounts = w.ethereum.request({ method: "eth_requestAccounts" });
       console.log(accounts);
-      return resolve(accounts && !!accounts[0]);
+      // return resolve(accounts && !!accounts[0]);
+      return resolve(accounts);
     });
   };
 
